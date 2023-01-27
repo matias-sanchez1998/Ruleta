@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.ruleta {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("./assets/ruleta.png");
+  background-size: cover;
+  animation: 3s rotate linear 2s;
+  transform-origin: 50% 50%;
+}
+
+.numeroRuleta {
+  margin: auto;
+}
+
+.buttonRuleta {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+button {
+  margin: 0.5rem;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
